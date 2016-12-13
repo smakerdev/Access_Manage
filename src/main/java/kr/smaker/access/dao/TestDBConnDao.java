@@ -14,9 +14,9 @@ import org.springframework.stereotype.Repository;
 public class TestDBConnDao {
 
 	@Autowired
-	private SqlSession sqlSession;
+	private static SqlSession sqlSession;
 
-    public LoginItem checklogin(String id, String pw) {
+    public static LoginItem checklogin(String id, String pw) {
 		String out = sqlSession.selectOne("userMapper.getpwd", id);
 		System.out.println("out : " + out);
 		

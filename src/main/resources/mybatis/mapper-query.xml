@@ -20,4 +20,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM user_info
 		WHERE user_id=#{userid}
 	</select>
+	
+	<select id ="test" parameterType="String" resultType= "dsm.hs.kr.dao.UserData">
+		select * from user_info where user_id=#{userid}
+	</select>
 </mapper>
