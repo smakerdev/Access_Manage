@@ -7,9 +7,10 @@
 <html>
 <head>
 <title>DSM 외출 신청</title>
+<jsp:include page="include/common.jsp" flush="false"></jsp:include>
 <body>
 
-	<div class="container">
+	<div class="container" style="padding: 70px 0; text-align: center;">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="login-panel panel panel-default">

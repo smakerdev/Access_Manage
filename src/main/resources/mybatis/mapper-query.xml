@@ -3,8 +3,13 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace= "userMapper" >
-	<select id ="getTime"  resultType= "String">
-        SELECT now()
-    </select>
+<mapper namespace="userMapper">
+	<select id="getTime" resultType="String">
+		SELECT now()
+	</select>
+
+	<select id="logincheck" parameterType="String"
+		resultType="kr.smaker.access.dao.UserInfo">
+		SELECT * FROM user_info where user_id = #{userid}, user_pw = #{userpw};
+	</select>
 </mapper>
