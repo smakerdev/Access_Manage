@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import kr.smaker.access.dao.LoginItem;
 import kr.smaker.access.service.TestService;
+import kr.smaker.access.Tool.LoginSession;
 import kr.smaker.access.Tool.UTF8Response;
 
 @Controller
@@ -28,7 +29,8 @@ public class LoginController {
 			throws Exception {
 		String userid = request.getParameter("userid");
 		String userpw = request.getParameter("userpw");
-
+		LoginSession session = new LoginSession();
+		
 		if (userid.equals("")) {
 			return new UTF8Response("{\"success\":false, \"errorcode\":1}", "json").entity;
 		}
@@ -41,9 +43,9 @@ public class LoginController {
 		LoginItem logindata = testService.checklogin(userid, userpw);
 		if (logindata.loginstate) {
 			HashMap<String, String> SessionMap = new HashMap<String, String>();
-			SessionMap.put("email", email);
-			SessionMap.put("password", password);
-			SessionMap.put("submit_number", (logindata.cookies).toString());
+			SessionMap.put("userid", userid);
+			SessionMap.put("userpw", userpw);
+			SessionMap.put("idx", (logindata.cookies).toString());
 			session.MakeSession(SessionMap, request, response);
 
 			ArrayList<Cookie> cookies = logindata.cookies;
@@ -55,7 +57,5 @@ public class LoginController {
 			System.out.println("Login Failed");
 			return new UTF8Response("{\"success\":false, \"errorcode\":0}", "json").entity;
 		}
-
-		return null;
 	}
 }
