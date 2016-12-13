@@ -1,4 +1,4 @@
-package kr.smaker.access;
+package kr.smaker.access.Controller;
 
 import java.text.DateFormat;
 import java.util.Date;
