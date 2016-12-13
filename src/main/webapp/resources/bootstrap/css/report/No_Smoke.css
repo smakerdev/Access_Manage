@@ -1,0 +1,52 @@
+#Title{
+  font-size : 40px;
+  text-align : center;
+  padding : 20px;
+}
+#write{
+  font-size : 35px;
+  width : 100px;
+  text-align : center;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.table{
+  font-size : 20px;
+}
+#p{
+  font-size : 30px;
+  line-height : 300%;
+}
+#date{
+  text-align : center;
+}
+#sign{
+  text-align : right;
+}
+#table_1{
+  width : 150px;
+  text-align : center;
+  border-right: 1px solid #000;
+}
+#table_2{
+  width : 350px;
+  border-right: 1px solid #000;
+}
+#table_3{
+  width : 150px;
+  text-align : center;
+  border-right: 1px solid #000;
+}
+.container{
+  border : solid;
+  margin-bottom: 30px;
+}
+#table_4{
+  border-bottom : 1px solid #000;
+}
+#table_5{
+  width : 150px;
+  text-align : center;
+  border-right : 1px solid #000;
+  border-bottom : 1px solid #000;
+}

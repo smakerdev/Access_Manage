@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/report.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Report Preview</title>
+  </head>
+  <body>
+    <div id="all">
+    <p id="title">2017학년도 대덕소프트웨어마이스터고등학교 입학원서</p>
+    <table class="tg" style="table-layout: fixed; width: 741px">
+      <colgroup>
+      <col style="width: 80px">
+      <col style="width: 155px">
+      <col style="width: 104px">
+      <col style="width: 136px">
+      <col style="width: 25px">
+      <col style="width: 27px">
+      <col style="width: 75px">
+      <col style="width: 160px">
+      </colgroup>
+        <tr>
+          <th class="tg-yw4l">접수 번호</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">&nbsp;중학교 코드</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">반</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">수험 번호</th>
+          <th class="tg-yw4l">※ </th>
+        </tr>
+        <tr>
+          <td class="tg-yw4l attend">지 &nbsp;원 &nbsp;자<br>인적 사항</td>
+          <td class="tg-yw4l know" colspan="7">
+            1. 성명 <input id="name1" class="blank" readonly>&nbsp; 2.성별 <input id="wm" class="blank" readonly>&nbsp; 3.주민등록번호 <input id="pernum" class="blank" readonly>&nbsp;<br>
+            4. 주소 <input id="address" class="blank" readonly><br>
+            5. 보호자 성명 <input id="parent" class="blank" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-yw41">연락 전화</td>
+          <td class="nopadding tg-yw4l" colspan="2">
+            <table class="noborder">
+              <colgroup>
+                <col style="width: 67px">
+                <col style="width: 227px">
+              </colgroup>
+              <tr>
+                <th class="tg-baqh">보호자</th>
+                <th class="tg-yw4l"></th>
+              </tr>
+              <tr>
+                <td class="tg-baqh">학  교</td>
+                <td class="tg-yw4l"></td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">본  인</td>
+                <td class="tg-yw4l"></td>
+              </tr>
+            </table>
+
+    </td>
+    <td class="tg-yw41" id="gra">졸업 구분</td>
+    <td class="tg-yw4l" colspan="4"><br>
+      <input class="graduate blank" readonly> 년 <input id="date" class="blank" readonly> 월 중학교 졸업예정&nbsp;<input id="check" class="blank" readonly>
+      <input class="graduate blank" readonly> 년 <input id="date" class="blank" readonly> 월 중학교 졸업&nbsp;<input id="check" class="blank" readonly>
+      <input class="graduate blank" readonly> 년 <input id="date" class="blank" readonly> 월 고입검정고시 합격&nbsp;<input id="check" class="blank" readonly>
+
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-yw41"  rowspan="2">전형 유형</td>
+    <td class="tg-yw4l" colspan="7"  id="type">대전시 교육청[관내 / 관외]</td></tr>
+  <tr><td colspan="8">aaa</td> <td></td></tr>
+  <tr>
+    <td class="tg-yw41">내신 성적</td>
+    <td class="fixedLineHeight nopadding" colspan="7">
+      <table id="avg" class="nomargin fullwidth">
+        <colgroup>
+          <col style="width: 80px">
+          <col style="width: 80px">
+          <col style="width: 80px">
+          <col style="width: 80px">
+          <col style="width: 90px">
+          <col style="width: 90px">
+          <col style="width: 110px">
+        </colgroup>
+
+        <tr>
+          <th class="tg-baqh" colspan="4">교과 성적</th>
+          <th class="tg-baqh" rowspan="2"><br><br>출석</th>
+          <th class="tg-baqh" rowspan="2"><br><br>봉사</th>
+          <th class="tg-baqh" rowspan="2"><br><br>총점</th>
+        </tr>
+        <tr>
+          <td class="tg-baqh">1학년<br>평균 평점</td>
+          <td class="tg-baqh">2학년<br>평균 평점</td>
+          <td class="tg-baqh">3학년<br>평균 평점</td>
+          <td class="tg-baqh">교과 성적<br>환산 점수</td>
+        </tr>
+        <tr>
+          <td class="tg-baqh">&nbsp;</td>
+          <td class="tg-baqh"></td>
+          <td class="tg-baqh"></td>
+          <td class="tg-baqh"></td>
+          <td class="tg-baqh"></td>
+          <td class="tg-baqh"></td>
+          <td class="tg-baqh"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-yw40" colspan="2" id="num">
+      보훈 번호: <input id="nation" class="blank" readonly><br>
+      <br>위는 국가 유공자<br>자녀임을 확인함<br>
+      <br>2016. 10.&nbsp;&nbsp;&nbsp;&nbsp;.<br><br>
+      담임 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(인)
+    </td>
+    <td class="tg-yw4l" colspan="5" id="sign"><br>본인은 귀 고등학교에 입학하고자 소정의 서류를 갖추어 지원합니다.<br><br>2016년 10월 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일<br><br>지원자 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(인)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보호자 :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(인)
+    <br><br><p id="p01">대덕소프트웨어마이스터고등학교장 귀하</p></td>
+    <td class="tg-yw4l" id="picture">
+      사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;진<br>
+      <br>
+      (3cm x 4cm)
+    </td>
+
+  </tr>
+  <tr>
+    <td id="command" class="tg-s6z2" colspan="8">추천서</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" colspan="8">
+      본 입학 원서의 내용은 사실과 다름이 없으며 상기자는 귀교에 입학 저격자로 인정되므로 추천합니다.
+      <br><br>2016년  10월 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일
+      <br><br><p id="w1">작성자:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (인)</p>
+      <p id="m1"><input id="middleSchool" class="blank" readonly> 중학교장      (직인)</p>
+    </td>
+  </tr>
+</table>
+<br>
+<p id="p02">-------------------- 절 ---------- 취 ---------- 선 --------------------</p>
+
+<table class="tg inline_table cut1" style="undefined;table-layout: fixed; width: 380px">
+<colgroup>
+<col style="width: 126x">
+<col style="width: 126px">
+<col style="width: 126px">
+</colgroup>
+  <tr>
+    <th class="tg-3a3g" colspan="3">2017학년도 대덕소프트웨어마이스터고등학교 입학전형<br><h3>&nbsp;수험표</h3></th>
+  </tr>
+  <tr>
+    <td class="tg-6nwz" rowspan="5">사&nbsp;&nbsp;&nbsp;&nbsp;진<br><br>3cmx4cm</td>
+    <td class="tg-6nwz">수험 번호</td>
+    <td class="tg-ecrz">※</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+    <td class="tg-6nwz"></td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">출신중학교</td>
+    <td class="tg-4996">중학교</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">학&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;번</td>
+    <td class="tg-6nwz"></td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz">접수 번호</td>
+    <td class="tg-ecrz">※</td>
+  </tr>
+  <tr>
+    <td class="tg-6nwz" id="log" colspan="3">대덕소프트웨어마이스터고등학교장</td>
+  </tr>
+</table>
+
+<table class="tg inline_table" style="table-layout: fixed; width: 380px">
+<colgroup>
+<col style="width: 135px">
+<col style="width: 135px">
+</colgroup>
+  <tr>
+    <th class="tg-s6z2" colspan="2">2017학년도 대덕소프트웨어마이스터고등학교<br><h3>&nbsp;접수증</h3></th>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+    <td class="tg-s6z2"></td>
+  </tr>
+  <tr>
+    <td class="tg-s6z2">출신중학교</td>
+    <td class="tg-s6z2"></td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">접수번호</td>
+    <td class="tg-yw4l">※</td>
+  </tr>
+  <tr>
+    <td  id="br1" class="tg-baqh" rowspan="2">심층면접일시<br></td>
+    <td id="br2" class="tg-yw4l" rowspan="2"><br>※ 대&nbsp;&nbsp;&nbsp;전 : 11월 03일 09:00<br>&nbsp;&nbsp;&nbsp;&nbsp;타시도 : 11월 03일 14:00</td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td class="tg-baqh" colspan="2" id="log">대덕소프트웨어마이스터고등학교장</td>
+  </tr>
+</table>
+  </div>
+  </body>
+</html>

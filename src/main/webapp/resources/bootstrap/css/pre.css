@@ -1,0 +1,52 @@
+body{
+  margin : 0px auto;
+}
+
+iframe{
+  height : 85vh;
+  margin:0px auto;
+  margin-bottom:2%;
+}
+
+button{
+    width:100px;
+    height:40px;
+}
+
+#print{
+    width:15%;
+    height: 50px;
+    font-size:20px;
+    float:right;
+}
+
+#next{
+    width:5%;
+    height:35px;
+    font-size:20px;
+    margin-left:3%;
+}
+
+#prev{
+    width:5%;
+    height:35px;
+    font-size:20px;
+    margin-left:43%;
+}
+
+#cancel{
+    margin-left:23.5%;
+}
+
+.choose{
+    font-size:18px;
+}
+
+.btn{
+  float: right;
+  display: inline;
+}
+
+p{
+    align:middle;
+}
