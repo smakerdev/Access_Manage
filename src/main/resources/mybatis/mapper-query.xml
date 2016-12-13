@@ -10,6 +10,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="logincheck" parameterType="String"
 		resultType="kr.smaker.access.dao.UserInfo">
-		SELECT * FROM user_info where user_id = #{userid}, user_pw = #{userpw};
+		SELECT * FROM user_info where user_id = #{userid}, user_pw
+		= #{userpw};
+	</select>
+
+	<select id="getpwd" parameterType="String" resultType="String">
+		SELECT
+		user_pw
+		FROM user_info
+		WHERE user_id=#{userid}
 	</select>
 </mapper>
