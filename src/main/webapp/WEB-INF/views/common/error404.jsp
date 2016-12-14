@@ -28,7 +28,7 @@
 					<div class="error-details">Sorry, an error has occured,
 						Requested page not found!</div>
 					<div>
-						<a href="/" class="btn btn-default btn-lg"> <span
+						<a href="./" class="btn btn-default btn-lg"> <span
 							class="glyphicon glyphicon-home"></span>Take Me Home
 						</a>
 					</div>
