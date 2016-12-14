@@ -18,59 +18,17 @@
 </head>
 
 <body>
+	<jsp:include page="../include/nav.jsp" />
 
-	<div id="wrapper">
-
-		<jsp:include page="../include/nav.jsp" />
-
-		<div id="page-wrapper">
-			<p>&nbsp;</p>
-			<!-- /.row -->
-			<div class="row">
-				<div class="col-lg-12">
-					<button type="button" class="btn btn-default pull-right"
-						onclick="fn_moveToURL('projectForm')">
-						<i class="fa fa-edit fa-fw"></i>외출 신청
-					</button>
-				</div>
-			</div>
-			<p>&nbsp;</p>
-			<!-- /.row -->
-			<div class="row">
-				<div class="col-lg-12">
-					<c:forEach var="listview" items="${listview}" varStatus="status">
-						<c:url var="link" value="task">
-							<c:param name="prno" value="${listview.prno}" />
-						</c:url>
-						<div class="col-lg-4">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<a href="${link}"><c:out value="${listview.prtitle}" /></a>
-								</div>
-								<div class="panel-body">
-									<p>
-										<c:out value="${listview.usernm}" />
-										(
-										<c:out value="${listview.prstatus}" />
-										)
-									</p>
-									<p>
-										<c:out value="${listview.prstartdate}" />
-										~
-										<c:out value="${listview.prenddate}" />
-									</p>
-								</div>
-							</div>
-						</div>
-					</c:forEach>
-				</div>
-			</div>
-			
+	<br><br><br>
+	<div class="container">
+		<div class="jumbotron">
+			<h2><strong>${usernm}</strong>님의 자퇴을 위한 서비스</h2>
+			<p>&nbsp;빨리 외출 신청합시다!!</p>
 		</div>
-		<!-- /#page-wrapper -->
-
 	</div>
-	<!-- /#wrapper -->
+
+
 </body>
 
 </html>
