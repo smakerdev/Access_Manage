@@ -29,7 +29,7 @@
 					<div class="error-details">Please contact the server
 						administrator</div>
 					<div>
-						<a href="index" class="btn btn-default btn-lg"> <span
+						<a href="/" class="btn btn-default btn-lg"> <span
 							class="glyphicon glyphicon-home"></span>Take Me Home
 						</a>
 					</div>
