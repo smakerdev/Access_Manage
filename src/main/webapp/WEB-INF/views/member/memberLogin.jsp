@@ -9,8 +9,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+
 
 <title>로그인 페이지</title>
 <jsp:include page="../include/common.jsp"></jsp:include>
@@ -43,8 +42,7 @@
 							<fieldset>
 								<div class="form-group">
 									<input class="form-control" placeholder="ID" name="userid"
-										id="userid" type="id" autofocus
-										value="userid">
+										id="userid" type="id" autofocus value="userid">
 								</div>
 								<div class="form-group">
 									<input class="form-control" placeholder="Password"

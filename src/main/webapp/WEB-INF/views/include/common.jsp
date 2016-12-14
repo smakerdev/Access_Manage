@@ -8,7 +8,7 @@
 	type="text/javascript"></script>
 <script src="<c:url value="/resources/bootstrap/js/bootstrap.min.js" />"></script>
 <script src="<c:url value="/resources/bootstrap/js/common.js" />"></script>
+<script src="<c:url value="/resources/bootstrap/js/access.js" />"></script>
 
-<link
-	href="<c:url value="/resources/bootstrap/css/paper.min.css" />"
+<link href="<c:url value="/resources/bootstrap/css/paper.min.css" />"
 	rel="stylesheet">
