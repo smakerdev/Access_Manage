@@ -15,7 +15,7 @@
 			<div class="col-md-4 col-md-offset-4">
 				<div class="login-panel panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">로그인 하세요!</h3>
+						<h3 class="panel-title">DSM 외출 관리 시스템</h3>
 					</div>
 					<div class="panel-body">
 						<form role="form" action="./logincheck" method="post" id="form1"
@@ -30,8 +30,7 @@
 										name="userpw" id="userpw" type="password"/>
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
-								<a href="#" class="btn btn-lg btn-success btn-block"
-									onclick="">로그인</a>
+								<button type="submit" class="btn btn-lg btn-success btn-block">로그인</button>
 							</fieldset>
 						</form>
 					</div>

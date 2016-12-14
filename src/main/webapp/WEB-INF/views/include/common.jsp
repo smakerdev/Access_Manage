@@ -10,8 +10,5 @@
 <script src="<c:url value="/resources/bootstrap/js/common.js" />"></script>
 
 <link
-	href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />"
-	rel="stylesheet">
-<link
-	href="<c:url value="/resources/bootstrap/css/bootstrap-theme.min.css" />"
+	href="<c:url value="/resources/bootstrap/css/paper.min.css" />"
 	rel="stylesheet">

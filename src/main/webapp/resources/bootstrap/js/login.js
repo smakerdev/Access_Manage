@@ -9,7 +9,6 @@ $("#loginSub").on("click", function() {
 			var _login_result = data.success;
 			if (_login_result == true) {
 				console.log("Login Success");
-				$("#loginButton").text("로그아웃");
 				$("#username").text(data.username);
 				$("#loginForm").attr("action", "./").submit();
 				$("#loginForm").modal('hide');

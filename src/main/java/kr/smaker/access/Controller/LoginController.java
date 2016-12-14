@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.smaker.access.dao.LoginItem;
 import kr.smaker.access.service.TestService;
@@ -25,10 +26,11 @@ public class LoginController {
 	private TestService testService;
 
 	@RequestMapping(value = "/logincheck", method = RequestMethod.POST)
-	public ResponseEntity<String> logincheck(HttpServletRequest request, HttpServletResponse response)
+	public ResponseEntity<String> logincheck(@RequestParam("userid") String userid, 
+			@RequestParam("userpw") String userpw,
+			HttpServletRequest request, 
+			HttpServletResponse response)
 			throws Exception {
-		String userid = request.getParameter("userid");
-		String userpw = request.getParameter("userpw");
 		LoginSession session = new LoginSession();
 		
 		if (userid.equals("")) {
@@ -38,14 +40,17 @@ public class LoginController {
 			return new UTF8Response("{\"success\":false, \"errorcode\":2}", "json").entity;
 		}
 
-		System.out.println("id : " + userid);
-		System.out.println("pw : " + userpw);
+		System.out.println("LoginController - id : " + userid);
+		System.out.println("LoginController - pw : " + userpw);
 		LoginItem logindata = testService.checklogin(userid, userpw);
 		if (logindata.loginstate) {
 			HashMap<String, String> SessionMap = new HashMap<String, String>();
 			SessionMap.put("userid", userid);
 			SessionMap.put("userpw", userpw);
 			SessionMap.put("idx", (logindata.cookies).toString());
+			System.out.println("SessionMap userid" + SessionMap.get("userid"));
+			System.out.println("SessionMap userpw" + SessionMap.get("userpw"));
+			System.out.println("SessionMap idx" + SessionMap.get("idx"));
 			session.MakeSession(SessionMap, request, response);
 
 			ArrayList<Cookie> cookies = logindata.cookies;
@@ -57,5 +62,5 @@ public class LoginController {
 			System.out.println("Login Failed");
 			return new UTF8Response("{\"success\":false, \"errorcode\":0}", "json").entity;
 		}
-	}
+	} 
 }

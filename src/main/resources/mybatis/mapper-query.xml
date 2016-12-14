@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="userMapper">
 	<select id="getTime" resultType="String">
-		SELECT now()
+		SELECT now();
 	</select>
 
 	<select id="logincheck" parameterType="String"
@@ -18,10 +18,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT
 		user_pw
 		FROM user_info
-		WHERE user_id=#{userid}
+		WHERE user_id=#{userid};
 	</select>
-	
-	<select id ="test" parameterType="String" resultType= "dsm.hs.kr.dao.UserData">
-		select * from user_info where user_id=#{userid}
+
+	<select id="test" parameterType="String" resultType="kr.smaker.access.dao.UserInfo">
+		select *
+		from user_info where user_id=#{userid};
 	</select>
 </mapper>
