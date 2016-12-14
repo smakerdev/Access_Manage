@@ -30,8 +30,7 @@
 				<div class="col-lg-12">
 					<button type="button" class="btn btn-default pull-right"
 						onclick="fn_moveToURL('projectForm')">
-						<i class="fa fa-edit fa-fw"></i>
-						<s:message code="project.new" />
+						<i class="fa fa-edit fa-fw"></i>외출 신청
 					</button>
 				</div>
 			</div>
