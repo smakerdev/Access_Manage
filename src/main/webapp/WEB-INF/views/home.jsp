@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <title>DSM 외출 신청</title>
@@ -29,15 +29,31 @@
 									<input class="form-control" placeholder="Password"
 										name="userpw" id="userpw" type="password"/>
 								</div>
-								<!-- Change this to a button or input when using this as a form -->
-								<button type="submit" class="btn btn-lg btn-success btn-block">로그인</button>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<button type="submit" class="btn btn-lg btn-success btn-block">로그인</button>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 
 </html>
+-->
+
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<c:choose>
+	<c:when test="${sessionScope.userid eq null}">
+		<jsp:forward page="/memberLogin" />
+	</c:when>
+	<c:otherwise>
+		<jsp:forward page="/index" />
+	</c:otherwise>
+
+
+</c:choose>
+

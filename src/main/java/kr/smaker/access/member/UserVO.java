@@ -4,6 +4,7 @@ public class UserVO {
 	private String userno;
 	private String userid;
 	private String userpw;
+	private String usernm;
 	private String userrole;
 
 	public String getUserno() {
@@ -28,6 +29,14 @@ public class UserVO {
 
 	public void setUserpw(String userpw) {
 		this.userpw = userpw;
+	}
+
+	public String getUsernm() {
+		return usernm;
+	}
+
+	public void setUsernm(String usernm) {
+		this.usernm = usernm;
 	}
 
 	public String getUserrole() {
