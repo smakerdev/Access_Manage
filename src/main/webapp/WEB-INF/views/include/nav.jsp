@@ -16,7 +16,11 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="./requestOut">외출 신청</a></li>
+				<li><a href="requestOut">외출 신청</a></li>
+				<c:if test='${sessionScope.userrole == "A"}'>
+					<li><a href="requestList">외출 내역</a></li>
+					<li><a href="requestSearch">외출자 검색</a></li>
+				</c:if>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

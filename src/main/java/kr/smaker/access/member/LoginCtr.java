@@ -80,6 +80,8 @@ public class LoginCtr {
 		session.removeAttribute("userrole");
 		session.removeAttribute("userno");
 		session.removeAttribute("usernm");
+		
+		session.invalidate();
 
 		return "redirect:/memberLogin";
 	}
