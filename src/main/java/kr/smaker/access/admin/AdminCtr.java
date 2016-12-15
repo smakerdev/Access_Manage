@@ -10,16 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class AdminCtr {
-	
-	@RequestMapping(value = "/admin/index")
-	public String adminCtr(HttpServletRequest request, Model model) {
-		String userno = request.getSession().getAttribute("userno").toString();
-		String usernm = request.getSession().getAttribute("usernm").toString();
-		
-		model.addAttribute("userno", userno);
-		model.addAttribute("usernm", usernm);
-		
-		return "admin/index";
+
+	@RequestMapping(value = "/admin")
+	public String adminIndexCtr(HttpServletRequest request, Model model) {
+		return "redirect:admin/index";
 	}
 
+	@RequestMapping(value = "/admin/index")
+	public String adminCtr(HttpServletRequest request, Model model) {
+		return "admin/index";
+	}
 }

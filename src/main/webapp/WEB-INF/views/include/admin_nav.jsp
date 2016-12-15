@@ -12,11 +12,13 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="./">DSM 외출 신청</a>
+			<a class="navbar-brand" href="./">교사용 페이지</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="requestOut">외출 신청</a></li>
+				<li><a href="requestOut">외출 신청 내역</a></li>
+				<li><a href="requestOut">오늘의 외출자</a></li>
+				<li><a href="requestOut">검색</a></li>
 				<c:if test='${sessionScope.userrole == "A"}'>
 					<li><a href="requestList">외출 내역</a></li>
 					<li><a href="requestSearch">외출자 검색</a></li>
@@ -24,7 +26,6 @@
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="memberPage">${usernm}님</a></li>
 				<li><a href="memberLogout">로그아웃</a></li>
 			</ul>
 		</div>

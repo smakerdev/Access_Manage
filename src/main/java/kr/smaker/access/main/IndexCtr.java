@@ -18,7 +18,9 @@ public class IndexCtr {
 		String usernm = request.getSession().getAttribute("usernm").toString();
 		String userrole = request.getSession().getAttribute("userrole").toString();
 
-	
+		if (userrole.equals("A")) {
+			return "admin/index";
+		} 
 		System.out.println("UserData : " + userno + usernm + userrole);
 		model.addAttribute("userrole", userrole);
 		model.addAttribute("usernm", usernm);

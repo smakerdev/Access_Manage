@@ -28,13 +28,13 @@
 </head>
 
 <body>
-
+	<br><br><br><br>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
-				<div class="login-panel panel panel-default">
+				<div class="login-panel panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">로그인 하세요</h3>
+						<h3 class="panel-title">DSM 외출 신청</h3>
 					</div>
 					<div class="panel-body">
 						<form role="form" action="memberLoginChk" method="post" id="form1"
