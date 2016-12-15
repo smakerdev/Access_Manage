@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>메인</title>
+<title>관리자 페이지</title>
 <jsp:include page="../include/common.jsp"></jsp:include>
 <script>
 	function fn_formSubmit() {
@@ -20,11 +20,14 @@
 <body>
 	<jsp:include page="../include/nav.jsp" />
 
-	<br><br><br>
+	<br>
+	<br>
+	<br>
 	<div class="container">
 		<div class="jumbotron">
-			<h2><strong>${usernm}</strong>님의 외출을 위한 서비스</h2>
-			<p>&nbsp;빨리 외출 신청합시다!!</p>
+			<h2>
+				<strong>Admin Page</strong>
+			</h2>
 		</div>
 	</div>
 

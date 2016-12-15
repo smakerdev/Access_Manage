@@ -42,7 +42,7 @@
 							<fieldset>
 								<div class="form-group">
 									<input class="form-control" placeholder="ID" name="userid"
-										id="userid" type="id" autofocus value="userid">
+										id="userid" type="id">
 								</div>
 								<div class="form-group">
 									<input class="form-control" placeholder="Password"
