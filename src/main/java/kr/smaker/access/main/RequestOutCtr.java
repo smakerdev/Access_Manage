@@ -14,7 +14,7 @@ public class RequestOutCtr {
 		String userrole = request.getSession().getAttribute("userrole").toString();
 		
 		if (userrole.equals("A")) {
-			return "main/index";
+			return "admin/index";
 		}
 		return "main/RequestOut";
 	}
