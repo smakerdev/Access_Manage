@@ -22,7 +22,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		VALUES (#{userno}, 'O', NOW() );
 	</insert>
 	
-	<insert id="insertRequest" parameterType="String">
+	<insert id="insertRequest" parameterType="java.util.HashMap">
 		INSERT INTO request_out_info 
 		(USERNO, STATUS, REASON, OUTTIME)
 		VALUES (#{userno}, '대기 중', #{reason}, #{outtime})

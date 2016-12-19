@@ -1,5 +1,7 @@
 package kr.smaker.access.member;
 
+import java.util.HashMap;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,4 +27,7 @@ public class MemberSvc {
         sqlSession.insert("insertLogOut", param);
     }
     
+    public void insertRequest(HashMap<String, Object> map) throws Exception {
+    	sqlSession.insert("insertRequest", map);
+    }
 }
