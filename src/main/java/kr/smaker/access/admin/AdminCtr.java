@@ -20,9 +20,4 @@ public class AdminCtr {
 	public String adminCtr(HttpServletRequest request, Model model) {
 		return "admin/index";
 	}
-	
-	@RequestMapping(value ="/requestOut")
-	public String requestOutLIsr() {
-		return "admin/RequestOut";
-	}
 }
