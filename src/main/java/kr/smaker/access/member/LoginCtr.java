@@ -27,7 +27,8 @@ public class LoginCtr {
 	@RequestMapping(value = "memberLogin")
 	public String memberLogin(HttpServletRequest request, ModelMap modelMap) {
 		String userid = get_cookie("sid", request);
-
+		
+		System.out.println("Login Before : " + userid);
 		modelMap.addAttribute("userid", userid);
 
 		return "member/memberLogin";

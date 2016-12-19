@@ -41,5 +41,4 @@ public class AdminInterceptor implements HandlerInterceptor {
     
     public void afterCompletion(HttpServletRequest req, HttpServletResponse res, Object handler, Exception ex) {
     }
-
 }
