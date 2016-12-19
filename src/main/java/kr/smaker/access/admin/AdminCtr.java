@@ -9,15 +9,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping(value = "/admin")
 public class AdminCtr {
 
-	@RequestMapping(value = "/admin")
 	public String adminIndexCtr(HttpServletRequest request, Model model) {
 		return "redirect:admin/index";
 	}
 
-	@RequestMapping(value = "/admin/index")
+	@RequestMapping(value = "/index")
 	public String adminCtr(HttpServletRequest request, Model model) {
 		return "admin/index";
+	}
+	
+	@RequestMapping(value ="/requestOut")
+	public String requestOutLIsr() {
+		return "admin/RequestOut";
 	}
 }
