@@ -23,12 +23,12 @@
 	<div class="container">
 		<form class="form-horizontal">
 			<fieldset>
-				<legend>외춯 신청</legend>
+				<legend>외출 신청</legend>
 				<div class="form-group">
-					<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+					<label for="name" class="col-lg-2 control-label">이름</label>
 					<div class="col-lg-10">
-						<input type="text" class="form-control" id="inputEmail"
-							placeholder="Email">
+						<input type="text" class="form-control" id="name"
+							placeholder="이름">
 					</div>
 				</div>
 				<div class="form-group">
@@ -36,53 +36,13 @@
 					<div class="col-lg-10">
 						<input type="password" class="form-control" id="inputPassword"
 							placeholder="Password">
-						<div class="checkbox">
-							<label> <input type="checkbox"> Checkbox
-							</label>
-						</div>
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="textArea" class="col-lg-2 control-label">Textarea</label>
+					<label for="textArea" class="col-lg-2 control-label">외출 사유</label>
 					<div class="col-lg-10">
 						<textarea class="form-control" rows="3" id="textArea"></textarea>
-						<span class="help-block">A longer block of help text that
-							breaks onto a new line and may extend beyond one line.</span>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-lg-2 control-label">Radios</label>
-					<div class="col-lg-10">
-						<div class="radio">
-							<label> <input type="radio" name="optionsRadios"
-								id="optionsRadios1" value="option1" checked=""> Option
-								one is this
-							</label>
-						</div>
-						<div class="radio">
-							<label> <input type="radio" name="optionsRadios"
-								id="optionsRadios2" value="option2"> Option two can be
-								something else
-							</label>
-						</div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="select" class="col-lg-2 control-label">Selects</label>
-					<div class="col-lg-10">
-						<select class="form-control" id="select">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select> <br> <select multiple="" class="form-control">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
+						<span class="help-block">구체적인 사유를 작성해주세요.</span>
 					</div>
 				</div>
 				<div class="form-group">
