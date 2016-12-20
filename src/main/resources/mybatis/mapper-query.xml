@@ -27,4 +27,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		(USERNO, NAME, GRADENUMBER, STATUS, REASON, OUTTIME)
 		VALUES (#{userno}, #{name}, #{number},'대기 중', #{reason}, #{outtime})
 	</insert>
+	
+	<select id="selectRequestList" resultType="kr.smaker.access.main.RequestVO" >
+        SELECT NAME, GRADENUMBER, STATUS, REASON, OUTTIME, BACKTIME
+          FROM request_out_info
+         ORDER BY NO DESC 
+    </select> 
+    
 </mapper>
