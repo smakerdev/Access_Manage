@@ -47,11 +47,13 @@ public class RequestOutCtr {
 			+ date + " "
 			+ time + " "
 			+ reason + " ");
+		
 		String outtime = date + " " + time;
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("name", name);
 		map.put("outtime", outtime);
 		map.put("reason", reason);
+		map.put("number", number);
 		map.put("userno", userno);
 		
 		try {

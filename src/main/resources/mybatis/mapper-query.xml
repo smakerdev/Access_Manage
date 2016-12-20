@@ -24,7 +24,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<insert id="insertRequest" parameterType="java.util.HashMap">
 		INSERT INTO request_out_info 
-		(USERNO, STATUS, REASON, OUTTIME)
-		VALUES (#{userno}, '대기 중', #{reason}, #{outtime})
+		(USERNO, NAME, GRADENUMBER, STATUS, REASON, OUTTIME)
+		VALUES (#{userno}, #{name}, #{number},'대기 중', #{reason}, #{outtime})
 	</insert>
 </mapper>

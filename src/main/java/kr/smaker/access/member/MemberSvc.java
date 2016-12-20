@@ -16,18 +16,18 @@ public class MemberSvc {
     private SqlSessionTemplate sqlSession;    
     
     public UserVO selectMember4Login(LoginVO param) {
-        return sqlSession.selectOne("selectMember4Login", param);
+        return sqlSession.selectOne("userMapper.selectMember4Login", param);
     }
     
     public void insertLogIn(String param) {
-        sqlSession.insert("insertLogIn", param);
+        sqlSession.insert("userMapper.insertLogIn", param);
     }
 
     public void insertLogOut(String param) {
-        sqlSession.insert("insertLogOut", param);
+        sqlSession.insert("userMapper.insertLogOut", param);
     }
     
     public void insertRequest(HashMap<String, Object> map) throws Exception {
-    	sqlSession.insert("insertRequest", map);
+    	sqlSession.insert("userMapper.insertRequest", map);
     }
 }
