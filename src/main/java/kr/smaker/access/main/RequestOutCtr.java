@@ -47,7 +47,7 @@ public class RequestOutCtr {
 			name = new String(name.getBytes("8859_1"), "UTF-8");
 
 		if (reason != null)
-			reason = new String(name.getBytes("8859_1"), "UTF-8");
+			reason = new String(reason.getBytes("8859_1"), "UTF-8");
 		
 		String userno = request.getSession().getAttribute("userno").toString();
 
