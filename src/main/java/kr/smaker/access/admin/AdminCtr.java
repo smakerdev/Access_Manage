@@ -17,22 +17,22 @@ import kr.smaker.access.main.RequestVO;
 import kr.smaker.access.member.MemberSvc;
 
 @Controller
-@RequestMapping(value = "/admin")
 public class AdminCtr {
 
 	@Autowired
 	private MemberSvc memberSvc;
-
+	
+	@RequestMapping(value="/admin")
 	public String adminIndexCtr(HttpServletRequest request, Model model) {
 		return "redirect:admin/index";
 	}
 
-	@RequestMapping(value = "/index")
+	@RequestMapping(value = "/admin/index")
 	public String adminCtr(HttpServletRequest request, Model model) {
 		return "admin/index";
 	}
 
-	@RequestMapping(value = "/requestList")
+	@RequestMapping(value = "/admin/requestList")
 	public String openRequestList(ModelMap modelMap, Map<String, Object> commandMap) throws Exception {
 		List<Map<String, Object>> list = memberSvc.selectRequestList(commandMap);
 		modelMap.addObject("list", list);
