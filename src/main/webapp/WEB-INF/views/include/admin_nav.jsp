@@ -16,17 +16,12 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="requestOut">외출 신청 내역</a></li>
-				<li><a href="requestOut">오늘의 외출자</a></li>
-				<li><a href="requestOut">검색</a></li>
-				<c:if test='${sessionScope.userrole == "A"}'>
-					<li><a href="requestList">외출 내역</a></li>
-					<li><a href="requestSearch">외출자 검색</a></li>
-				</c:if>
+				<li><a href="./admin/requestList">외출 신청 내역</a></li>
+				<li><a href="./admin/requestToday">오늘의 외출자</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="memberLogout">로그아웃</a></li>
+				<li><a href="./memberLogout">로그아웃</a></li>
 			</ul>
 		</div>
 	</div>

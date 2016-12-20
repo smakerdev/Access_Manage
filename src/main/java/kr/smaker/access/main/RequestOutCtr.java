@@ -34,8 +34,13 @@ public class RequestOutCtr {
 	}
 
 	@RequestMapping(value = "/requestCheck")
-	public String requestOutCheck(HttpServletRequest request) throws UnsupportedEncodingException {
+	public String requestOutCheck(HttpServletRequest request, Model model) throws UnsupportedEncodingException {
 
+		String userno = request.getSession().getAttribute("userno").toString();
+		String usernm = request.getSession().getAttribute("usernm").toString();
+		String userrole = request.getSession().getAttribute("userrole").toString();
+		model.addAttribute("usernm", usernm);
+		
 		request.setCharacterEncoding("euc-kr");
 		String name = request.getParameter("name");
 		String number = request.getParameter("number");
@@ -48,8 +53,6 @@ public class RequestOutCtr {
 
 		if (reason != null)
 			reason = new String(reason.getBytes("8859_1"), "UTF-8");
-		
-		String userno = request.getSession().getAttribute("userno").toString();
 
 		System.out.println(name + " " + number + " " + date + " " + time + " " + reason + " ");
 
