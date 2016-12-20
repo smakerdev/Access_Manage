@@ -28,10 +28,24 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		VALUES (#{userno}, #{name}, #{number},'대기 중', #{reason}, #{outtime})
 	</insert>
 	
-	<select id="selectRequestList" resultType="kr.smaker.access.main.RequestVO" >
-        SELECT NAME, GRADENUMBER, STATUS, REASON, OUTTIME, BACKTIME
+	<select id="selectRequestList" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+	
+	<![CDATA[
+        SELECT 
+        	NAME, 
+        	GRADENUMBER, 
+        	STATUS, 
+        	REASON, 
+        	OUTTIME, 
+        	BACKTIME
           FROM request_out_info
-         ORDER BY NO DESC 
+          ORDER BY NO DESC
+          ]]>
     </select> 
     
+    <!-- <select id="selectRequestList" resultType="kr.smaker.access.main.RequestVO">
+    	SELECT NAME, GRADENUMBER, STATUS, REASON, OUTTIME, BACKTIME
+    	 FROM request_out_info CU
+    	 WHERE CU.NAME = #{userid}
+    </select> -->
 </mapper>
