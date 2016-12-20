@@ -8,6 +8,7 @@
 <html>
 <head>
 <title>외출 신청 페이지</title>
+<meta charset="utf-8">
 <jsp:include page="../include/common.jsp"></jsp:include>
 <script>
 	function fn_formSubmit() {
