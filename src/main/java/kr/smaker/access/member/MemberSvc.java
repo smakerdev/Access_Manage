@@ -8,7 +8,6 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import kr.smaker.access.main.RequestVO;
 import kr.smaker.access.member.LoginVO;
 import kr.smaker.access.member.UserVO;
 
