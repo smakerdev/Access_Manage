@@ -17,7 +17,6 @@
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="admin/requestList">외출 신청 내역</a></li>
-				<li><a href="admin/requestToday">오늘의 외출자</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">

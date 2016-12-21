@@ -43,11 +43,19 @@ public class AdminCtr {
 		}
 		return "redirect:index";
 	}
-
-	@RequestMapping(value = "/admin/requestList")
-	public String openRequestList(ModelMap modelMap, Map<String, Object> commandMap) throws Exception {
+	
+	@RequestMapping(value = "/requestList")
+	public String openRequestList(ModelMap modelMap, Map<String, Object> commandMap, HttpServletRequest request) throws Exception {
 		List<Map<String, Object>> list = memberSvc.selectRequestList(commandMap);
+		String userrole = request.getSession().getAttribute("userrole").toString();
+		
 		modelMap.addObject("list", list);
-		return "admin/requestList";
+
+		if (userrole != null) {
+			if (userrole.equals("A")) {
+				return "admin/requestList";
+			}
+		}
+		return "redirect:index";
 	}
 }
