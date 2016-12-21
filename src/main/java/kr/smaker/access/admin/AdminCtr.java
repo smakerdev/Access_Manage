@@ -24,12 +24,25 @@ public class AdminCtr {
 	
 	@RequestMapping(value="/admin")
 	public String adminIndexCtr(HttpServletRequest request, Model model) {
-		return "redirect:admin/index";
+		String userrole = request.getSession().getAttribute("userrole").toString();
+		if (userrole != null) {
+			if (userrole.equals("A")) {
+				return "admin/index";
+			}
+		}
+		return "redirect:index";
 	}
 
 	@RequestMapping(value = "/admin/index")
 	public String adminCtr(HttpServletRequest request, Model model) {
-		return "admin/index";
+		String userrole = request.getSession().getAttribute("userrole").toString();
+		
+		if (userrole != null) {
+			if (userrole.equals("A")) {
+				return "admin/index";
+			}
+		}
+		return "redirect:index";
 	}
 
 	@RequestMapping(value = "/admin/requestList")

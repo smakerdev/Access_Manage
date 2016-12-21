@@ -18,7 +18,7 @@ public class RequestOutCtr {
 
 	@Autowired
 	private MemberSvc memberSvc;
-
+	
 	@RequestMapping(value = "/requestOut")
 	public String requestOut(Model model, HttpServletRequest request) {
 
