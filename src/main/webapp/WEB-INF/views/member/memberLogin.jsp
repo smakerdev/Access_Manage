@@ -18,7 +18,7 @@
 	function fn_formSubmit() {
 		if (!chkInputValue("#userid", "아이디"))
 			return false;
-		if (!chkInputValue("#userpw", "회원가입"))
+		if (!chkInputValue("#userpw", "비밀번호"))
 			return false;
 
 		$("#form1").submit();
